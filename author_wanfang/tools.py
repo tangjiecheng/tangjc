@@ -1,4 +1,4 @@
-import requests
+﻿import requests
 from lxml import etree
 import json
 import fake_useragent
@@ -50,12 +50,12 @@ def start(url):
 
 def get_proxies():
     if random.randint(1,2)==1:
-        proxyUser="H8S586W474G3005D"
-        proxyPass="F516EB80A1F0EC9F"
+        proxyUser=""
+        proxyPass=""
 
     else:
-        proxyUser = "H3MEE66JK209K76D"
-        proxyPass = "E5A0C876B366FC47"
+        proxyUser = ""
+        proxyPass = ""
     proxies=randomproxies(proxyUser,proxyPass)
     print(proxies)
     return proxies
